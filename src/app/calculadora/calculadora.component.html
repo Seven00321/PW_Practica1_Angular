@@ -1,0 +1,32 @@
+<h2>Aplicación de Calculadora</h2>
+
+<div class="container">
+    <div class="row">
+        <label for="operando_a">Operando A:</label>
+        <input 
+            type="number" 
+            id="operando_a" 
+            class="form-control mb-2"
+            [(ngModel)] = "operadorA"
+        >
+
+        <label for="operando_b">Operando B:</label>
+        <input 
+            type="number" 
+            id="operando_b" 
+            class="form-control"
+            [(ngModel)] = "operadorB"
+        >
+    </div>
+
+    <div class="col ">
+        <button class="btn btn-primary" (click)="sumar()">Sumar</button>
+
+        <button class="btn btn-secondary" (click)="restar()">Restar</button>
+    </div>
+
+
+    <label for="">Resultado</label>
+    <input type="text" value={{resultado}}>
+
+</div>

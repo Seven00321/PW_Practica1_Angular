@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from '../persona';
 
 @Component({
     selector: 'app-contador',
@@ -11,6 +12,19 @@ export class ContadorComponent implements OnInit {
     ngOnInit(): void {
         
     }
+ 
+    // persona:persona = {
+    //     nombre: 'Richard Mikahel',
+    //     edad: 23
+    // }
 
-    nombre = 'Richard M.'
+    numero: number = 1;
+
+    // Metodos
+    decrementar = () => this.numero--;
+
+    incrementar = () => this.numero +=1;
+    
+    
+
 }
